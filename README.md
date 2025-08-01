@@ -109,4 +109,14 @@ Get My Pick : https://assignment-5-five-red.vercel.app/api/v1/driver/my-rides
 
 Get Available Pick : https://assignment-5-five-red.vercel.app/api/v1/driver/available-rides
 
+## Important Links
+
+Live Link : https://assignment-5-five-red.vercel.app/api/v1/
+
+GitHub Link : https://github.com/MdAsraful56/B5-Assignment-5
+
+YouTube Video Link : https://youtu.be/bEKpn8Z6B-I?si=E39WFuc01hfon3cw
+
+YouTube Video Link : https://youtu.be/bEKpn8Z6B-I?si=E39WFuc01hfon3cw
+
 ### Thanks For checking out my project! If you have any questions or suggestions, feel free to reach out.
