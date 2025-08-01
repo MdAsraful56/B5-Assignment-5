@@ -33,8 +33,9 @@ export const sendAdmin = async () => {
             auths: [authProvider],
         };
 
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const Admin = await User.create(payload);
-        console.log(Admin);
+        // console.log(Admin);
     } catch (error) {
         console.log(error);
     }

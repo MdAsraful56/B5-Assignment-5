@@ -24,7 +24,14 @@ app.use(passport.session());
 
 app.use(cookieParser());
 app.use(express.json());
-app.use(cors());
+app.use(
+    cors({
+        origin: envVars.FRONTEND_URL,
+        credentials: true,
+    })
+);
+
+app.set('trust proxy', 1); // Enable if behind a reverse proxy
 
 app.use('/api/v1', router);
 
