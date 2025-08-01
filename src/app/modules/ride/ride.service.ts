@@ -84,6 +84,13 @@ const updateRide = async (id: string, payload: Partial<IRide>) => {
 };
 
 const deleteRide = async (id: string) => {
+    const ride = await Ride.findById(id);
+    if (ride?.status === 'COMPLETED') {
+        throw new AppError(
+            httpStatus.BAD_REQUEST,
+            'Cannot delete a completed ride!'
+        );
+    }
     const result = await Ride.findByIdAndDelete(id);
     return result;
 };
